@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Budynków</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 300px; padding: 20px; background: #f4f4f4;">
+            <h3>Kalkulator 🏢</h3>
+            <input type="text" id="address-input" placeholder="Wpisz adres...">
+            <button id="search-btn">Szukaj</button>
+            <div id="results" style="margin-top: 20px;"></div>
+        </div>
+        <div id="map" style="flex: 1;"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
